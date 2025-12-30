@@ -66,14 +66,27 @@ async function incrementGlobalViews() {
     throw new Error("CounterAPI not loaded");
   }
 
-  var counter = new window.Counter({
+  const counter = new window.Counter({
     version: "v1",
-    namespace: "marisadimonda"
+    namespace: "marisadimonda",
   });
 
-  var res = await counter.up("homeostasis");
-  var v = Number(res && res.value);
-  if (!Number.isFinite(v)) throw new Error("CounterAPI returned non-numeric value");
+  const res = await counter.up("homeostasis");
+
+  // Accept multiple possible response shapes
+  const raw =
+    (res && res.value) ??
+    (res && res.data && res.data.value) ??
+    (res && res.counter && res.counter.value) ??
+    res;
+
+  const v = Number(raw);
+
+  if (!Number.isFinite(v)) {
+    console.warn("CounterAPI raw response:", res);
+    throw new Error("CounterAPI returned non-numeric value");
+  }
+
   return v;
 }
 
