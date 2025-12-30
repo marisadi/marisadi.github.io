@@ -134,11 +134,11 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   try {
     updatePV = await incrementGlobalViews();
+    setViewNumber(updatePV);
   } catch (e) {
-    console.warn("Global counter failed; using local fallback.", e);
-    updatePV = incrementLocalViewsFallback();
+    console.warn("Counter blocked; hiding view count.", e);
+    setViewNumber("— ad blocker detected – can't count"); // or "views unavailable"
   }
 
-  setViewNumber(updatePV);
   scramble();
 });
