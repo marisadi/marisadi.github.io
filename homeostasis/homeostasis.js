@@ -73,12 +73,11 @@ async function incrementGlobalViews() {
 
   const res = await counter.up("homeostasis");
 
-  // Accept multiple possible response shapes
+  // ✅ CounterAPI returns { count: number } (not value)
   const raw =
-    (res && res.value) ??
-    (res && res.data && res.data.value) ??
-    (res && res.counter && res.counter.value) ??
-    res;
+    (res && res.count) ??
+    (res && res.value) ?? // keep older/other shapes just in case
+    (res && res.data && (res.data.count ?? res.data.value));
 
   const v = Number(raw);
 
