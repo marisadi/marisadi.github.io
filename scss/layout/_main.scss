@@ -1,0 +1,8 @@
+@use "../utilities" as *;
+.main {
+  padding: $gutter;
+}
+
+@media (max-width: $bp) {
+  .main { padding-top: 0; }
+}

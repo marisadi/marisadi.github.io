@@ -1,0 +1,58 @@
+@use "../utilities" as *;
+
+.work {
+  max-width: $max;
+}
+
+.work__header {
+  margin-bottom: 1.25rem;
+}
+
+.work__title {
+  font-size: $font-size;
+  font-weight: normal;
+  margin: 0;
+}
+
+.work__meta,
+.work__desc {
+  margin: 0 0 0.6rem 0;
+  max-width: 640px;
+}
+
+/* Stack is separate from grid — intentional */
+.stack {
+  display: grid;
+  gap: $gutter;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+/* Prev / next */
+.work-pagination {
+  margin-top: 4rem;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.work-pagination a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+@media (max-width: 600px) {
+  .work-pagination {
+    margin-top: 3rem;
+  }
+}

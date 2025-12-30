@@ -1,0 +1,36 @@
+@use "../utilities" as *;
+
+.sidebar {
+  padding: $gutter;
+  border-right: 0px solid #ddd;
+
+  position: sticky;
+  top: 0;
+  align-self: start;
+  height: 100vh;
+  overflow: auto;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $gutter;
+    margin-bottom: 1rem;
+  }
+}
+
+.brand {
+  text-decoration: none;
+  color: inherit;
+  font-weight: $font-weight--bold;
+  font-size: $font-size-lg;
+}
+
+@media (max-width: $bp) {
+  .sidebar {
+    height: auto;
+    overflow: visible;
+    border-right: none;
+    border-bottom: 0px solid #ddd;
+  }
+}

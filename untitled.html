@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Untitled — Marisa Di Monda</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="layout">
+
+        <!-- LEFT: Sidebar -->
+        <aside class="sidebar" aria-label="Site menu">
+            <div class="sidebar__top">
+                <a class="brand" href="index.html">Marisa Di Monda</a>
+
+                <!-- Burger (mobile) -->
+                <button class="burger" type="button" aria-label="Open menu" aria-expanded="false"
+                    aria-controls="mobileMenu">
+                    <span></span><span></span>
+                </button>
+            </div>
+
+            <!-- Desktop nav -->
+            <nav class="nav nav--desktop" aria-label="Primary navigation">
+                <a href="index.html" data-nav="work">Work</a>
+
+                <ul class="nav-list" id="primaryNavList">
+                    <li><a href="untitled.html">Untitled</a></li>
+                    <li><a href="preserving.html">Preserving my false sense of security</a></li>
+                    <li><a href="loose-threads.html">Loose Threads</a></li>
+                    <li><a href="seven-stories.html">Seven Stories of Mellonopolis</a></li>
+                    <li><a href="learning-a-blind-eye.html">Learning a blind eye</a></li>
+                    <li><a href="/homeostasis/">homeostasis</a></li>
+                    <li><a href="resistance.html">Resistance WIP</a></li>
+                </ul>
+
+                <a href="info.html" data-nav="info">Info</a>
+                <a href="mailto:marisadimonda@gmail.com">marisadimonda@gmail.com</a>
+                <a href="https://www.instagram.com/marisadimonda">instagram</a>
+            </nav>
+
+            <!-- Mobile nav panel (EMPTY list — JS will clone) -->
+            <nav id="mobileMenu" class="nav nav--mobile" aria-label="Mobile navigation" hidden>
+                <a class="brand" href="index.html">Marisa Di Monda</a>
+
+                <a href="index.html" data-nav="work">Work</a>
+                <ul class="nav-list" id="mobileNavList"></ul>
+
+                <a href="info.html" data-nav="info">Info</a>
+                <a href="mailto:marisadimonda@gmail.com">marisadimonda@gmail.com</a>
+                <a href="https://www.instagram.com/marisadimonda">instagram</a>
+            </nav>
+        </aside>
+
+        <main class="main">
+            <article class="work">
+                <header class="work__header">
+                    <h1 class="work__title"><i>Untitled</i>, &nbsp;2025</h1>
+                    <p class="work__meta">Calico off-cuts, thread.</p>
+                    <p class="work__desc muted">
+                        <i>The Long Way</i>, SET Lewisham, London
+                    </p>
+                    <p class="work__desc">
+                        A group exhibition with Akinsola, Katie Tindle,
+                        Johanna Deverdier and Becky Astonon the theme of slow working.
+                    </p>
+                    <p class="work__desc"></p>
+                    We had been thinking about slow work, craft and tech, and efficiency versus painstaking
+                    care.</br>
+                    The works featured in this exhibition reveal how stories, recipes and craft are passed down hand
+                    to hand, mouth to mouth, while … making… things… s..l..o..w..l..y…
+                    </p>
+                </header>
+
+                <section class="stack">
+                    <img src="images/untitled-full.webp" alt="untitled — full frontal view" loading="lazy"
+                        decoding="async" />
+                    <img src="images/untitled-corner detail.webp" alt="untitled — corner detail" loading="lazy"
+                        decoding="async" />
+                    <img src="images/untitled-mid install view.webp" alt="untitled — mid frontal view" loading="lazy"
+                        decoding="async" />
+                    <img src="images/untitled-back detail.webp" alt="untitled — back detail view" loading="lazy"
+                        decoding="async" />
+                    <img src="images/untitled-install view.webp" alt="untitled — install view" loading="lazy"
+                        decoding="async" />
+                </section>
+            </article>
+
+            <nav class="work-pagination" aria-label="Project navigation">
+                <a class="work-prev" href="#">Previous</a>
+                <a class="work-next" href="#">Next</a>
+            </nav>
+        </main>
+
+    </div>
+
+    <script src="js/menu.js"></script>
+    <script src="js/nav-clone.js"></script>
+    <script src="js/work-pagination.js"></script>
+</body>
+
+</html>

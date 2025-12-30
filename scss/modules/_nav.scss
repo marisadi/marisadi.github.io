@@ -1,0 +1,67 @@
+@use "../utilities" as *;
+
+.nav {
+  display: grid;
+  // gap: 0.5rem;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    &[aria-current="page"] {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+  }
+
+/* Sidebar navigation lists (works list, menu links) */
+.nav-list {
+  list-style: none;
+  margin: 0.25rem 0 1rem 0;
+  padding: 0;
+  padding-inline-start: 5px;
+  display: grid;
+  // gap: 0.5rem;
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    font-style: italic;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    &[aria-current="page"] {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+  }
+}
+}
+
+/* Default states */
+.nav--mobile { display: none; }
+
+@media (max-width: $bp) {
+  .nav--desktop { display: none; }
+
+  /* Floating overlay menu */
+  .nav--mobile {
+    display: flex;            // visible *when not hidden*
+    flex-direction: column;
+    gap: 0.75rem;
+
+    position: fixed;
+    inset: 0;                 // top/right/bottom/left = 0
+    background: $bg;
+    padding: 2.2rem $gutter;
+    z-index: $z-menu;
+  }
+}

@@ -1,0 +1,27 @@
+@use "../utilities" as *;
+
+.burger {
+  display: none;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  width: 34px;
+  height: 26px;
+  cursor: pointer;
+
+  span {
+    display: block;
+    height: 1px;
+    background: $text;
+    margin: 7px 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: $bp) {
+  .burger {
+    display: inline-block;
+    z-index: 9999;
+  }
+
+}

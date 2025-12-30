@@ -1,0 +1,11 @@
+@use "../utilities" as *;
+
+.layout {
+  display: grid;
+  grid-template-columns: $sidebar-w $main-w;
+  min-height: 100vh;
+}
+
+@media (max-width: $bp) {
+  .layout { grid-template-columns: 1fr; }
+}

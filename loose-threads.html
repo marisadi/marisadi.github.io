@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Loose Threads — Marisa Di Monda</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="layout">
+
+        <!-- LEFT: Sidebar -->
+        <aside class="sidebar" aria-label="Site menu">
+            <div class="sidebar__top">
+                <a class="brand" href="index.html">Marisa Di Monda</a>
+
+                <!-- Burger (mobile) -->
+                <button class="burger" type="button" aria-label="Open menu" aria-expanded="false"
+                    aria-controls="mobileMenu">
+                    <span></span><span></span>
+                </button>
+            </div>
+
+            <!-- Desktop nav -->
+            <nav class="nav nav--desktop" aria-label="Primary navigation">
+                <a href="index.html" data-nav="work">Work</a>
+
+                <ul class="nav-list" id="primaryNavList">
+                    <li><a href="untitled.html">Untitled</a></li>
+                    <li><a href="preserving.html">Preserving my false sense of security</a></li>
+                    <li><a href="loose-threads.html">Loose Threads</a></li>
+                    <li><a href="seven-stories.html">Seven Stories of Mellonopolis</a></li>
+                    <li><a href="learning-a-blind-eye.html">Learning a blind eye</a></li>
+                    <li><a href="/homeostasis/">homeostasis</a></li>
+                    <li><a href="resistance.html">Resistance WIP</a></li>
+                </ul>
+
+                <a href="info.html" data-nav="info">Info</a>
+                <a href="mailto:marisadimonda@gmail.com">marisadimonda@gmail.com</a>
+                <a href="https://www.instagram.com/marisadimonda">instagram</a>
+            </nav>
+
+            <!-- Mobile nav panel (EMPTY list — JS will clone) -->
+            <nav id="mobileMenu" class="nav nav--mobile" aria-label="Mobile navigation" hidden>
+                <a class="brand" href="index.html">Marisa Di Monda</a>
+
+                <a href="index.html" data-nav="work">Work</a>
+                <ul class="nav-list" id="mobileNavList"></ul>
+
+                <a href="info.html" data-nav="info">Info</a>
+                <a href="mailto:marisadimonda@gmail.com">marisadimonda@gmail.com</a>
+                <a href="https://www.instagram.com/marisadimonda">instagram</a>
+            </nav>
+        </aside>
+
+        <main class="main">
+            <article class="work">
+                <header class="work__header">
+                    <h1 class="work__title"><i>Loose Threads</i>, &nbsp;2022</h1>
+                    <p class="work__meta">Touch sensing, audio quilt – conductive thread, non-conductive thread,
+                        capacitive sensors, microcontroller, cotton fabric, cotton batting, silicon
+                        tubing, steel frame bed, spring mattress, pillows, Nonna's crocheted blanket, yarn, orange
+                        essential oils, bluetooth headphones
+                    </p>
+                    <p class="work__desc muted">
+                        <i>MA/MFA Computational Arts Degree Show</i>, Goldsmiths, University of London
+                    </p>
+                    <p class="work__desc">
+                        A degree show piece that was part of a research project exploring the development and histories
+                        of gendered labour and knowledge through the framing of women’s work within the domestic realm,
+                        its ties to computing, and tensions between art and craft.
+                    </p>
+                    <p class="work__desc">
+                        This is a story about women’s work – where it is valued and where it is not, where it is seen
+                        and where it is hidden.</p>
+                    <p class="work__desc">
+                        Loose threads invites you to lie on the bed beneath a canopy made by my Nonna, touch the blue
+                        stitching on the quilt to listen to my mother tell stories of women in our family, and watch a
+                        projection from Tasmania, Australia of a near identical quilt made by my mother in the process
+                        of teaching me how to make the one in the space.
+                    </p>
+                    <p class="work__desc">
+                        The quilt is patched with printed images of women contributing to the history of computing –
+                        collected from the feminist server AnarachaServer – and of women from my family. The design is
+                        based on an Anni Albers’ wall hanging and includes an IBM punch card pattern encoded with a
+                        quote from the first computer programmer, Ada Lovelace:
+                    </p>
+                    <p class="work__desc indent-left">
+                        <i>We may say most aptly that the Analytical Engine weaves algebraical patterns just as the
+                            Jacquard loom weaves flowers and leaves.</i>
+                    </p>
+                    <p class="work__desc">
+                        The work includes a performance. I am wearing my Nonna’s clothes – which she made just after
+                        migrating to Australia – and crocheting an orange for each visitor.
+                    </p>
+                </header>
+
+                <section class="stack">
+                    <img src="images/loose-threads-install view-interaction 2.webp"
+                        alt="Loose Threads — installation view with interaction" loading="lazy" decoding="async" />
+
+                    <div class="video-embed">
+                        <iframe
+                            src="https://player.vimeo.com/video/747679927?h=2b51f5cb9d&title=0&byline=0&portrait=0&badge=0&autopause=0&muted=0&loop=0"
+                            title="Loose Threads" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <img src="images/loose-threads-detail view 5.webp" alt="Loose Threads — material detail"
+                        loading="lazy" decoding="async" />
+
+                    <img src="images/loose-threads-detail view 1.webp" alt="Loose Threads — stitched textile detail"
+                        loading="lazy" decoding="async" />
+
+                    <img src="images/loose-threads-detail view 4.webp" alt="Loose Threads — quilt surface detail"
+                        loading="lazy" decoding="async" />
+
+                    <img src="images/loose-threads-detail view 3.webp" alt="Loose Threads — conductive thread detail"
+                        loading="lazy" decoding="async" />
+
+                    <img src="images/loose-threads-detail view 2.webp"
+                        alt="Loose Threads — close detail of textile layers" loading="lazy" decoding="async" />
+
+                    <img src="images/loose-threads-install view- orange floor.webp"
+                        alt="Loose Threads — installation view with orange floor" loading="lazy" decoding="async" />
+
+                    <img src="images/loose-threads-install view- interaction orange close.webp"
+                        alt="Loose Threads — close interaction view with orange lighting" loading="lazy"
+                        decoding="async" />
+
+                    <img src="images/loose-threads-install view- interaction orange.webp"
+                        alt="Loose Threads — interaction view under orange lighting" loading="lazy" decoding="async" />
+
+                    <img src="images/loose-threads-install view- crochet .webp"
+                        alt="Loose Threads — crocheted textile element in installation" loading="lazy"
+                        decoding="async" />
+
+                    <img src="images/loose-threads-install view- crochet close .webp"
+                        alt="Loose Threads — close view of crocheted textile" loading="lazy" decoding="async" />
+
+                    <img src="images/loose-threads-install view-entrance.webp"
+                        alt="Loose Threads — installation view at exhibition entrance" loading="lazy"
+                        decoding="async" />
+
+                    <img src="images/loose-threads-install view-sign.webp"
+                        alt="Loose Threads — installation signage detail" loading="lazy" decoding="async" />
+                </section>
+            </article>
+
+            <nav class="work-pagination" aria-label="Project navigation">
+                <a class="work-prev" href="#">Previous</a>
+                <a class="work-next" href="#">Next</a>
+            </nav>
+        </main>
+
+    </div>
+
+    <script src="js/menu.js"></script>
+    <script src="js/nav-clone.js"></script>
+    <script src="js/work-pagination.js"></script>
+    <script src="js/toggle-video-controls.js"></script>
+</body>
+
+</html>

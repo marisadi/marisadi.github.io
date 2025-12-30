@@ -1,0 +1,57 @@
+@use "../utilities" as *;
+
+.about {
+  max-width: $max;
+}
+
+.about__intro {
+  margin-bottom: 2rem;
+
+  p {
+    margin: 0;
+    max-width: 42ch;
+  }
+}
+
+/* CV sections */
+.cv-section {
+  margin-bottom: 2rem;
+}
+
+.cv-title {
+  font-size: $font-size;
+  font-weight: normal;
+  margin: 0 0 0.75rem 0;
+}
+
+/* CV list */
+.cv-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cv-list li {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: $gutter;
+  margin-bottom: 0.4rem;
+}
+
+.cv-year {
+  color: $muted;
+}
+
+.cv-entry {
+  line-height: $line-height;
+}
+
+@media (max-width: $bp) {
+  .cv-list li {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-year {
+    margin-bottom: 0.15rem;
+  }
+}

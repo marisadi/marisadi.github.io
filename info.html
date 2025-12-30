@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Marisa Di Monda — Info</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="layout">
+
+    <!-- LEFT: Sidebar -->
+    <aside class="sidebar" aria-label="Site menu">
+      <div class="sidebar__top">
+        <a class="brand" href="index.html">Marisa Di Monda</a>
+
+        <!-- Burger (mobile) -->
+        <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span>
+        </button>
+      </div>
+
+      <!-- Desktop nav -->
+      <nav class="nav nav--desktop" aria-label="Primary navigation">
+        <a href="index.html" data-nav="work">Work</a>
+
+        <ul class="nav-list" id="primaryNavList">
+          <li><a href="untitled.html">Untitled</a></li>
+          <li><a href="preserving.html">Preserving my false sense of security</a></li>
+          <li><a href="loose-threads.html">Loose Threads</a></li>
+          <li><a href="seven-stories.html">Seven Stories of Mellonopolis</a></li>
+          <li><a href="learning-a-blind-eye.html">Learning a blind eye</a></li>
+          <li><a href="/homeostasis/">homeostasis</a></li>
+          <li><a href="resistance.html">Resistance WIP</a></li>
+        </ul>
+
+        <a href="info.html" data-nav="info">Info</a>
+        <a href="mailto:marisadimonda@gmail.com">marisadimonda@gmail.com</a>
+        <a href="https://www.instagram.com/marisadimonda">instagram</a>
+      </nav>
+
+      <!-- Mobile nav panel (EMPTY list — JS will clone) -->
+      <nav id="mobileMenu" class="nav nav--mobile" aria-label="Mobile navigation" hidden>
+        <a class="brand" href="index.html">Marisa Di Monda</a>
+
+        <a href="index.html" data-nav="work">Work</a>
+        <ul class="nav-list" id="mobileNavList"></ul>
+
+        <a href="info.html" data-nav="info">Info</a>
+        <a href="mailto:marisadimonda@gmail.com">marisadimonda@gmail.com</a>
+        <a href="https://www.instagram.com/marisadimonda">instagram</a>
+      </nav>
+    </aside>
+
+
+    <!-- Main -->
+    <main class="main">
+      <section class="about">
+
+        <header class="about__intro">
+          <p>
+            Based in London.
+          </p>
+        </header>
+
+        <!-- Exhibitions -->
+        <section class="cv-section">
+          <h2 class="cv-title">Exhibitions</h2>
+          <ul class="cv-list">
+            <li>
+              <span class="cv-year">2025</span>
+              <span class="cv-entry">
+                <i>The Long Way</i>, SET Lewisham, London
+              </span>
+            </li>
+
+            <li>
+              <span class="cv-year">2023</span>
+              <span class="cv-entry">
+                <i>Computational Arts Staff Show</i>, Goldsmiths, University of London
+              </span>
+            </li>
+
+            <li>
+              <span class="cv-year">2023</span>
+              <span class="cv-entry">
+                <i>Peckham Digital Festival</i>, Eagle Wharf, London
+              </span>
+            </li>
+
+            <li>
+              <span class="cv-year">2022</span>
+              <span class="cv-entry">
+                <i>Spectacle for Later: Computational Cinema Festival</i>, Rio Cinema, London
+              </span>
+            </li>
+
+            <li>
+              <span class="cv-year">2022</span>
+              <span class="cv-entry">
+                <i>Prelude to Space</i>, Stokey Pop Up, London
+              </span>
+            </li>
+
+            <li>
+              <span class="cv-year">2022</span>
+              <span class="cv-entry">
+                <i>(Sub) Systems: MA/MFA Computational Arts Degree Show</i>, Goldsmiths, University of London
+              </span>
+            </li>
+
+            <li>
+              <span class="cv-year">2022</span>
+              <span class="cv-entry">
+                <i>The Wrong Biennale: [Digital] Fantasies Pavilion</i>, Online
+              </span>
+            </li>
+
+            <li>
+              <span class="cv-year">2021</span>
+              <span class="cv-entry">
+                <i>The Future of Cities. Not for Granted</i>, Halle 14, Leipzig, Germany
+              </span>
+            </li>
+
+            <li>
+              <span class="cv-year">2021</span>
+              <span class="cv-entry">
+                <i>Shivers: MA/MFA Computational Arts Degree Show</i>, Goldsmiths, University of London
+              </span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Publications -->
+        <section class="cv-section">
+          <h2 class="cv-title">Publications</h2>
+          <ul class="cv-list">
+            <li>
+              <span class="cv-year">2025</span>
+              <span class="cv-entry">
+                <a href="https://needlebound.bigcartel.com/product/needlebound-volume-2-coming-soon"><i>Needlebound</i>, Volume 2</a>
+              </span>
+            </li>
+          </ul>
+        </section>
+      
+        <!-- Collaborations -->
+        <section class="cv-section">
+          <h2 class="cv-title">Collaborations</h2>
+          <ul class="cv-list">
+            <li>
+              <span class="cv-year">2025</span>
+              <span class="cv-entry">
+                <a href="https://immersivearts.uk/projects/breathscapes/"><i>Breathscapes</i>, Immersive Arts UK</a>
+              </span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Education -->
+        <section class="cv-section">
+          <h2 class="cv-title">Education</h2>
+          <ul class="cv-list">
+            <li>
+              <span class="cv-year">2020–2022</span>
+              <span class="cv-entry">
+                MFA Computational Arts, Goldsmiths, University of London
+              </span>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </main>
+
+  </div>
+
+  <script src="js/menu.js"></script>
+  <script src="js/nav-clone.js"></script>
+</body>
+
+</html>

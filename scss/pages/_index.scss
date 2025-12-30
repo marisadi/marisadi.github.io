@@ -1,0 +1,46 @@
+@use "../utilities" as *;
+
+.works {
+  display: grid;
+  gap: 2.25rem;
+}
+
+/* Header above each grid */
+.work-block__text {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0;
+  margin-bottom: $gutter;
+
+  p {
+    margin: 0 0 0.6rem 0;
+  }
+}
+
+.work-title {
+  font-size: $font-size;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Index-specific image behaviour */
+.tile img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: $bp) {
+  .work-block__text {
+    grid-template-columns: 1fr !important;
+  }
+
+    /* Force header items to full width on mobile */
+  .work-block__text > * {
+    grid-column: span 12 !important;
+  }
+
+  .right {
+    text-align: left;
+  }
+}

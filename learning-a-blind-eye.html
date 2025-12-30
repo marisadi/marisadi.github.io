@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Loose Threads — Marisa Di Monda</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="layout">
+
+        <!-- LEFT: Sidebar -->
+        <aside class="sidebar" aria-label="Site menu">
+            <div class="sidebar__top">
+                <a class="brand" href="index.html">Marisa Di Monda</a>
+
+                <!-- Burger (mobile) -->
+                <button class="burger" type="button" aria-label="Open menu" aria-expanded="false"
+                    aria-controls="mobileMenu">
+                    <span></span><span></span>
+                </button>
+            </div>
+
+            <!-- Desktop nav -->
+            <nav class="nav nav--desktop" aria-label="Primary navigation">
+                <a href="index.html" data-nav="work">Work</a>
+
+                <ul class="nav-list" id="primaryNavList">
+                    <li><a href="untitled.html">Untitled</a></li>
+                    <li><a href="preserving.html">Preserving my false sense of security</a></li>
+                    <li><a href="loose-threads.html">Loose Threads</a></li>
+                    <li><a href="seven-stories.html">Seven Stories of Mellonopolis</a></li>
+                    <li><a href="learning-a-blind-eye.html">Learning a blind eye</a></li>
+                    <li><a href="/homeostasis/">homeostasis</a></li>
+                    <li><a href="resistance.html">Resistance WIP</a></li>
+                </ul>
+
+                <a href="info.html" data-nav="info">Info</a>
+                <a href="mailto:marisadimonda@gmail.com">marisadimonda@gmail.com</a>
+                <a href="https://www.instagram.com/marisadimonda">instagram</a>
+            </nav>
+
+            <!-- Mobile nav panel (EMPTY list — JS will clone) -->
+            <nav id="mobileMenu" class="nav nav--mobile" aria-label="Mobile navigation" hidden>
+                <a class="brand" href="index.html">Marisa Di Monda</a>
+
+                <a href="index.html" data-nav="work">Work</a>
+                <ul class="nav-list" id="mobileNavList"></ul>
+
+                <a href="info.html" data-nav="info">Info</a>
+                <a href="mailto:marisadimonda@gmail.com">marisadimonda@gmail.com</a>
+                <a href="https://www.instagram.com/marisadimonda">instagram</a>
+            </nav>
+        </aside>
+
+        <main class="main">
+            <article class="work">
+                <header class="work__header">
+                    <h1 class="work__title"><i>Learning a blind eye</i>, &nbsp;2021</h1>
+                    <p class="work__meta">Tryptych single-channel video, colour, sound, projection mapping, 2:35
+                    </p>
+                    <p class="work__desc muted">
+                        <i>MA/MFA Computational Arts Degree Show,</i> Goldsmiths, University of London, </br>
+                        <i>Peckham Digital Festival</i>, Eagle Wharf, London </br>
+                        <i>Spectacle for Later: Computational Cinema Festival</i>, Rio Cinema, London </br>
+                        <i>Prelude to Space</i>, Stokey Pop Up, London
+                    </p>
+                    <p class="work__desc">
+                        This film is an attempt to explore and understand how machine learning tools ‘think’ and ‘learn’
+                        and how that impacts what they make. The story has been written intandem with generating the
+                        visuals so that the story creates the visuals and the visuals in turn influence the writing of
+                        the story.
+                    </p>
+                    <p class="work__desc">
+                        The visuals in this film were created using a computational architecture comprising two parts:
+                        an ‘artist’ (VQGAN), generating thousands of images based on a series of words/phrases (yellow
+                        captions), and a ‘critic’ (CLIP) scoring and making selections from these images. Each panel
+                        simultaneously presents an alternative interpretation of the same words/phrases.
+                    </p>
+                    <p class="work__desc">
+
+                        The artist and critic were trained using the Imagenet model which is made up of millions of
+                        images scraped from the internet that were manually annotated and categorised by human workers
+                        of Amazon’s Mechanical Turk marketplace earning an average wage of $2USD/hour.
+                    </p>
+                    <p class="work__desc">
+                        These images are our images; interpreted and re-represented beyond our control or intention in
+                        an attempt to organise or map a world of objects. This is a political exercise with the
+                        consequence of perpetuating and amplifying cultural prejudices and biases that are enmeshed
+                        within the dataset. This system favours universalism over plurality and is already shaping a
+                        presentation of our world and transforming the future.
+                    </p>
+                    <p class="work__desc">
+                        The audio narration was generated using text to speech synthesis of my voice.
+                    </p>
+                    <p class="work__desc">
+                        This work was featured in the Goldsmiths, University of London MA + MFA Computational Arts Group
+                        Exhibition, Shivers, September 2021. During the exhibition, people were invited to participate
+                        and generate their own short films by tweeting a story or phrases to @ML_MOVIE. The generated
+                        film would then be tweeted back to them.
+                    </p>
+                </header>
+                <section class="stack">
+                    <div class="video-embed">
+                        <iframe src="https://www.youtube.com/embed/MBePBB8t0OI?rel=0&modestbranding=1"
+                            title="Learning a blind eye" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="grid-12">
+                        <img class="span-6" src="images/Learning a blind eye - install view.webp"
+                            alt="Learning a blind eye — installation view at Goldsmiths University, London"
+                            loading="lazy" decoding="async" />
+
+                        <img class="span-6 short" src="images/Learning a blind eye - skin detail.webp"
+                            alt="Learning a blind eye — close detail of projected image on skin" loading="lazy"
+                            decoding="async" />
+                    </div>
+
+                    <img src="images/peckham_digital_install.jpeg"
+                        alt="Learning a blind eye — installation view at Peckham Digital Festival" loading="lazy"
+                        decoding="async" />
+                </section>
+            </article>
+
+            <nav class="work-pagination" aria-label="Project navigation">
+                <a class="work-prev" href="#">Previous</a>
+                <a class="work-next" href="#">Next</a>
+            </nav>
+        </main>
+
+    </div>
+
+    <script src="js/menu.js"></script>
+    <script src="js/nav-clone.js"></script>
+    <script src="js/work-pagination.js"></script>
+    <script src="js/toggle-video-controls.js"></script>
+</body>
+
+</html>

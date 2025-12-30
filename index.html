@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Marisa Di Monda – Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="layout">
+
+    <!-- LEFT: Sidebar -->
+    <aside class="sidebar" aria-label="Site menu">
+      <div class="sidebar__top">
+        <a class="brand" href="index.html">Marisa Di Monda</a>
+
+        <!-- Burger (mobile) -->
+        <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span>
+        </button>
+      </div>
+
+      <!-- Desktop nav -->
+      <nav class="nav nav--desktop" aria-label="Primary navigation">
+        <a href="index.html" data-nav="work">Work</a>
+
+        <ul class="nav-list" id="primaryNavList">
+          <li><a href="untitled.html">Untitled</a></li>
+          <li><a href="preserving.html">Preserving my false sense of security</a></li>
+          <li><a href="loose-threads.html">Loose Threads</a></li>
+          <li><a href="seven-stories.html">Seven Stories of Mellonopolis</a></li>
+          <li><a href="learning-a-blind-eye.html">Learning a blind eye</a></li>
+          <li><a href="/homeostasis/">homeostasis</a></li>
+          <li><a href="resistance.html">Resistance WIP</a></li>
+        </ul>
+
+        <a href="info.html" data-nav="info">Info</a>
+        <a href="mailto:marisadimonda@gmail.com">marisadimonda@gmail.com</a>
+        <a href="https://www.instagram.com/marisadimonda">instagram</a>
+      </nav>
+
+      <!-- Mobile nav panel (EMPTY list — JS will clone) -->
+      <nav id="mobileMenu" class="nav nav--mobile" aria-label="Mobile navigation" hidden>
+        <a class="brand" href="index.html">Marisa Di Monda</a>
+
+        <a href="index.html" data-nav="work">Work</a>
+        <ul class="nav-list" id="mobileNavList"></ul>
+
+        <a href="info.html" data-nav="info">Info</a>
+        <a href="mailto:marisadimonda@gmail.com">marisadimonda@gmail.com</a>
+        <a href="https://www.instagram.com/marisadimonda">instagram</a>
+      </nav>
+    </aside>
+
+    <!-- RIGHT: Main content -->
+    <main class="main">
+
+      <section class="works" aria-label="Projects">
+
+        <!-- WORK BLOCK 1 -->
+        <section class="work-block" aria-label="Projrct Title">
+          <header class="work-block__text ">
+            <h2 class="work-title span-12"><i>Untitled</i>, &nbsp;2025</h2>
+            <p class="span-6">Calico off-cuts, thread.</p>
+            <p class="muted right span-6">Exhibition:<i>The Long Way</i>, SET Lewisham, London</p>
+          </header>
+
+          <div class="work-block__grid grid-12">
+            <a class="tile span-12" href="untitled.html">
+              <img src="images/untitled-full.webp" alt="Untitled-installation view" loading="lazy" decoding="async"
+                width="2000">
+            </a>
+            <a class="tile span-6" href="untitled.html">
+              <img src="images/untitled-corner detail.webp" alt="Untitled-installation view" loading="lazy"
+                decoding="async" width="2000">
+            </a>
+            <a class="tile span-6" href="untitled.html">
+              <img src="images/untitled-mid install view.webp" alt="Untitled-installation view" loading="lazy"
+                decoding="async" width="2000">
+            </a>
+            <a class="tile span-12" href="untitled.html">
+              <img src="images/untitled-back detail.webp" alt="Untitled-installation view" loading="lazy"
+                decoding="async" width="2000">
+            </a>
+            <a class="tile span-12" href="untitled.html">
+              <img src="images/untitled-install view.webp" alt="Untitled-installation view" loading="lazy"
+                decoding="async" width="2000">
+            </a>
+          </div>
+        </section>
+
+        <!-- WORK BLOCK 2 -->
+        <section class="work-block" aria-label="Preserving my false sense of security">
+          <a href="preserving.html">
+            <header class="work-block__text">
+              <h2 class="work-title span-12"><i>Preserving my false sense of security</i>, &nbsp;2025</h2>
+              <p class="span-6">Single-channel video, colour, sound, 8:45, glass jar, apricot jam</p>
+              <p class="muted right span-6">Exhibition:<i>The Long Way</i>, SET Lewisham, London</p>
+            </header>
+          </a>
+
+          <div class="work-block__grid grid-12">
+            <div class="tile span-6 click-video-container">
+              <video class="click-video" autoplay muted loop playsinline preload="metadata">
+                <source src="videos/preserving-bee.mp4" type="video/mp4">
+              </video>
+            </div>
+
+            <div class="tile span-6 click-video-container">
+              <video class="click-video" autoplay muted loop playsinline preload="metadata">
+                <source src="videos/preserving-knife.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </section>
+
+        <!-- WORK BLOCK 4 -->
+        <section class="work-block" aria-label="Project Title">
+          <header class="work-block__text">
+            <h2 class="work-title span-12"><i>Loose Threads</i>, &nbsp;2022</h2>
+            <p class="span-6">
+              Touch sensing, audio quilt – conductive thread, non-conductive thread, capacitive sensors,
+              microcontroller, cotton fabric, cotton batting, silicon tubing, steel frame bed, spring mattress, pillows,
+              Nonna's crocheted blanket, yarn, orange essential oils, bluetooth headphones
+            </p>
+            <p class="muted right span-6">Exhibition: <i>MA/MFA Computational Arts Degree Show</i>, Goldsmiths,
+              University of London</p>
+          </header>
+
+          <div class="work-block__grid grid-12">
+            <a class="tile span-12" href="loose-threads.html">
+              <img src="images/loose-threads-install-hand.webp" alt="Loose Threads — install view" loading="lazy"
+                decoding="async">
+            </a>
+
+            <div class="tile span-6">
+              <div class="video-embed">
+                <iframe
+                  src="https://player.vimeo.com/video/747679927?h=2b51f5cb9d&title=0&byline=0&portrait=0&badge=0&autopause=0&muted=0&loop=0"
+                  title="Loose Threads" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+
+            <a class="tile span-6" href="loose-threads.html">
+              <img src="images/loose-threads-install view-interaction 2.webp" alt="Loose Threads — install view"
+                loading="lazy" decoding="async">
+            </a>
+
+            <a class="tile span-6" href="loose-threads.html">
+              <img src="images/loose-threads-detail view 5.webp" alt="Loose Threads — install view" loading="lazy"
+                decoding="async">
+            </a>
+            <a class="tile span-6" href="loose-threads.html">
+              <img src="images/loose-threads-detail view 1.webp" alt="Loose Threads — install view" loading="lazy"
+                decoding="async">
+            </a>
+            <a class="tile span-6" href="loose-threads.html">
+              <img src="images/loose-threads-detail view 4.webp" alt="Loose Threads — install view" loading="lazy"
+                decoding="async">
+            </a>
+            <a class="tile span-6" href="loose-threads.html">
+              <img src="images/loose-threads-detail view 3.webp" alt="Loose Threads — install view" loading="lazy"
+                decoding="async">
+            </a>
+            <a class="tile span-6" href="loose-threads.html">
+              <img src="images/loose-threads-detail view 2.webp" alt="Loose Threads — install view" loading="lazy"
+                decoding="async">
+            </a>
+            <a class="tile span-6" href="loose-threads.html">
+              <img src="images/loose-threads-install view- orange floor.webp" alt="Loose Threads — install view"
+                loading="lazy" decoding="async">
+            </a>
+            <a class="tile span-6" href="loose-threads.html">
+              <img src="images/loose-threads-install view- interaction orange close.webp"
+                alt="Loose Threads — install view" loading="lazy" decoding="async">
+            </a>
+            <a class="tile span-6" href="loose-threads.html">
+              <img src="images/loose-threads-install view- interaction orange.webp" alt="Loose Threads — install view"
+                loading="lazy" decoding="async">
+            </a>
+            <a class="tile span-6" href="loose-threads.html">
+              <img src="images/loose-threads-install view- crochet .webp" alt="Loose Threads — install view"
+                loading="lazy" decoding="async">
+            </a>
+            <a class="tile span-6" href="loose-threads.html">
+              <img src="images/loose-threads-install view- crochet close .webp" alt="Loose Threads — install view"
+                loading="lazy" decoding="async">
+            </a>
+            <a class="tile span-6" href="loose-threads.html">
+              <img src="images/loose-threads-install view-entrance.webp" alt="Loose Threads — install view"
+                loading="lazy" decoding="async">
+            </a>
+            <a class="tile span-6" href="loose-threads.html">
+              <img class="short" src="images/loose-threads-install view-sign.webp" alt="Loose Threads — install view"
+                loading="lazy" decoding="async">
+            </a>
+          </div>
+        </section>
+
+        <!-- WORK BLOCK 5 -->
+        <section class="work-block" aria-label="Project Title">
+          <header class="work-block__text">
+            <h2 class="work-title span-12"><i>Seven Stories of Mellonopolis</i>, &nbsp;2022</h2>
+            <p class="span-6">Single channel video, tshirt prints<br /></p>
+            <p class="muted right span-6">
+              Exhibition: <i>The Future of Cities. Not for Granted</i>, Halle 14, Leipzig, Germany</br>
+              In collaboration with <a href="https://www.studioforage.com/">Studio Forage </a></br>
+              Photography by Walther LeKon
+            </p>
+          </header>
+
+          <div class="work-block__grid grid-12">
+            <a class="tile span-12" href="seven-stories.html">
+              <img src="images/seven-stories-install view.webp" alt="Seven Stories of Mellonopolis — install view 2"
+                loading="lazy" decoding="async">
+            </a>
+            <a class="tile span-6" href="seven-stories.html">
+              <img src="images/seven-stories-install view-tv.jpg" alt="Seven Stories of Mellonopolis — install view 2"
+                loading="lazy" decoding="async">
+            </a>
+            <div class="tile span-6">
+              <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/SZAqG4QxQ6U?rel=0&modestbranding=1&autoplay=1&loop=1"
+                  title="Seven Stories of Mellonopolis" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+            <a class="tile span-8-centered" href="seven-stories.html">
+              <img src="images/seven-stories-install view tshirts.webp"
+                alt="Seven Stories of Mellonopolis — install view 1" loading="lazy" decoding="async">
+            </a>
+            <a class="tile span-12" href="seven-stories.html">
+              <img src="images/seven-stories-install view-wall-description.webp"
+                alt="Seven Stories of Mellonopolis — install view 2" loading="lazy" decoding="async">
+            </a>
+            <a class="tile span-6" href="seven-stories.html">
+              <img src="images/seven-stories-install-view-curtain.webp"
+                alt="Seven Stories of Mellonopolis — install view 2" loading="lazy" decoding="async">
+            </a>
+            <a class="tile span-6" href="seven-stories.html">
+              <img src="images/seven-stories-install view-cage.webp"
+                alt="Seven Stories of Mellonopolis — install view 2" loading="lazy" decoding="async">
+              <img src="images/seven-stories-install view-people.webp"
+                alt="Seven Stories of Mellonopolis — install view 2" loading="lazy" decoding="async">
+            </a>
+          </div>
+        </section>
+
+        <!-- WORK BLOCK 6 -->
+        <section class="work-block" aria-label="Project Title">
+          <header class="work-block__text">
+            <h2 class="work-title span-12"><i>Learning a blind eye</i>, &nbsp;2021</h2>
+            <p class="span-6">Tryptych single-channel video, colour, sound, projection mapping, 2:35 <br /></p>
+            <p class="muted right span-6">
+              Exhibitions: <i>MA/MFA Computational Arts Degree Show,</i> Goldsmiths, University of London, </br>
+              <i>Peckham Digital Festival</i>, Eagle Wharf, London </br>
+              <i>Spectacle for Later: Computational Cinema Festival</i>, Rio Cinema, London </br>
+              <i>Prelude to Space</i>, Stokey Pop Up, London
+            </p>
+          </header>
+
+          <div class="work-block__grid grid-12">
+            <a class="tile span-6" href="learning-a-blind-eye.html">
+              <img src="images/Learning a blind eye - install view.webp"
+                alt="Learning a blind eye — Goldsmiths University, London install view" loading="lazy" decoding="async">
+            </a>
+            <a class="tile span-6" href="learning-a-blind-eye.html">
+              <img class="short" src="images/Learning a blind eye - skin detail.webp"
+                alt="Learning a blind eye — detail view" loading="lazy" decoding="async">
+            </a>
+            <a class="tile span-12" href="learning-a-blind-eye.html">
+              <img src="images/peckham_digital_install.jpeg" alt="Learning a blind eye — Peckham Digital install view"
+                loading="lazy" decoding="async">
+            </a>
+
+            <div class="tile span-12">
+              <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/MBePBB8t0OI?rel=0&modestbranding=1"
+                  title="Learning a blind eye" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- WORK BLOCK 3 -->
+        <section class="work-block" aria-label="Project Title">
+          <header class="work-block__text">
+            <h2 class="work-title span-12"><i>Resistance WIP</i>, &nbsp;2023+</h2>
+            <p class="span-6">Malleable interactive sound sculpture - Carbon black rubber, coffee sacks, dye, aluminium
+              wire.<br /></p>
+            <p class="muted right span-6">Exhibition: <i>Computational Arts Staff Show</i> Goldsmiths, University of
+              London</p>
+          </header>
+
+          <div class="work-block__grid grid-12">
+            <a class="tile span-4" href="resistance.html">
+              <img src="images/resistance-wash.webp" alt="Resistance WIP — view 1" loading="lazy" decoding="async">
+            </a>
+            <a class="tile span-4" href="resistance.html">
+              <img src="images/resistance-bath.webp" alt="Resistance WIP — view 2" loading="lazy" decoding="async">
+            </a>
+            <a class="tile span-4" href="resistance.html">
+              <img src="images/resistance-install.webp" alt="Resistance WIP — view 3" loading="lazy" decoding="async">
+            </a>
+          </div>
+        </section>
+
+      </section>
+    </main>
+
+  </div>
+
+  <script src="js/menu.js"></script>
+  <script src="js/nav-clone.js"></script>
+  <script src="js/toggle-video-controls.js"></script>
+</body>
+
+</html>
