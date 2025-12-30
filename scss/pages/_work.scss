@@ -56,3 +56,14 @@
     margin-top: 3rem;
   }
 }
+@media (max-width: $bp) {
+  .stack {
+    grid-template-columns: 1fr !important;
+  }
+
+/* Force header items to full width on mobile */
+  .stack > * {
+    grid-column: span 12 !important;
+  }
+
+}
