@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     setViewNumber(updatePV);
   } catch (e) {
     console.warn("Counter blocked; hiding view count.", e);
-    setViewNumber("— ad blocker detected – can't count"); // or "views unavailable"
+    setViewNumber("— filtering detected – cannot count"); // or "views unavailable"
   }
 
   scramble();
