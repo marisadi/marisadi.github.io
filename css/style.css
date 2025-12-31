@@ -31,6 +31,10 @@ a {
   text-decoration: none;
 }
 
+.link-view {
+  text-decoration: underline;
+}
+
 figure {
   margin: 0;
 }
