@@ -5,8 +5,6 @@
 Static portfolio site built with HTML, SCSS, and vanilla JavaScript.  
 Hosted on GitHub Pages with a custom domain.
 
----
-
 ## Local development
 
 ### Daily workflow
